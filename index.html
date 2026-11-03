@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Sup POS</title>
-<meta name="description" content="Privacy policy and terms of use for Sup POS, the Android point-of-sale and scanner app by Sup Digital.">
+<title>Privacy Policy and Terms of Use — Sup POS</title>
+<meta name="description" content="Privacy policy and terms of use for Sup POS, the free Android point-of-sale and scanner app by Sup Digital.">
 <style>
   :root { color-scheme: light dark; --text: #1f2328; --bg: #ffffff; --line: #d1d9e0; --link: #0969da; --tint: #f6f8fa; }
   @media (prefers-color-scheme: dark) {
@@ -17,8 +17,9 @@
   h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 1rem; }
   h2 { font-size: 1.3rem; line-height: 1.3; margin: 2.25rem 0 .75rem; padding-bottom: .3rem;
        border-bottom: 1px solid var(--line); }
-  p, ul, table { margin: 0 0 1rem; }
-  ul { padding-left: 1.5rem; }
+  h3 { font-size: 1.05rem; line-height: 1.3; margin: 1.5rem 0 .5rem; }
+  p, ul, ol, table { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.5rem; }
   li { margin: .3rem 0; }
   li > ul { margin: .3rem 0 0; }
   a { color: var(--link); overflow-wrap: anywhere; }
@@ -27,197 +28,160 @@
   table { border-collapse: collapse; display: block; overflow-x: auto; }
   th, td { border: 1px solid var(--line); padding: .5rem .75rem; text-align: left; vertical-align: top; }
   th { background: var(--tint); }
+  .part { margin-top: 3rem; padding-top: 1rem; border-top: 3px solid var(--line); }
+  nav ul { padding-left: 1.2rem; }
 </style>
 </head>
 <body>
 <main>
-<h1 id="privacy-policy--sup-pos">Privacy Policy — Sup POS</h1>
-<p><strong>Last updated:</strong> 1 November 2026</p>
-<p>Sup POS ("the app") is developed by Sup Digital.</p>
+<h1 id="top">Privacy Policy and Terms of Use — Sup POS</h1>
+<p><strong>Last updated:</strong> 3 November 2026</p>
+<p>Sup POS ("the app") is developed and published by Sup Digital ("Sup Digital", "we", "us"). This page is in two parts: the <a href="#privacy">Privacy Policy</a>, which says what the app does with data, and the <a href="#terms">Terms of Use</a>, which are the conditions on which the app is offered to you and your business. By installing or using the app you accept both. If you do not accept them, do not use the app. A summary of the terms is shown in the app under Settings ▸ About; this page is the full text and prevails.</p>
+
 <h2 id="short-version">Short version</h2>
-<p><strong>Your business data stays on your device unless you send it somewhere.</strong> The codes you scan,
-camera images, your catalog, sales and settings are kept in the app's private storage. We, the
-developer, have no server and never receive any of it. The app has no account system of its own,
-no advertising and no crash-reporting service of its own.</p>
-<p><strong>Where data can go, and only because you set it up:</strong> your own Google Drive or OneDrive account
-if you switch on automatic backup and sign in; your own Sup Booking inbox (a Google Apps Script in
-your Google account) if you switch on online orders and connect; a printer you choose; and any app
-you share a receipt or export with.</p>
-<p><strong>One thing you cannot switch off: scanner diagnostics.</strong> Barcode scanning is done by Google ML
-Kit, a component built into the app. ML Kit sends Google technical diagnostics about the scanner
-(your device model, Android version, the app's version, a per-installation identifier and scan
-performance figures). It does not send camera images or what the codes say. Details are below.</p>
-<h2 id="what-the-app-does-with-your-data">What the app does with your data</h2>
-<p><strong>Camera.</strong> The camera is used only to read QR codes and barcodes. Frames are analysed on your
-device by a barcode-recognition model bundled inside the app. Camera images are never saved,
-never uploaded, and never leave your phone.</p>
-<p><strong>Pictures you pick.</strong> You can pick a picture from your photo album to read a QR code or barcode
-in it, to give a product a photo, or to set your shop logo. Pictures come through Android's photo
-picker, so the app can open only the picture you choose and needs no storage permission. A picture
-scanned for a code is read on your device and not kept. A product photo or logo is shrunk and
-stored in the app's private storage; it appears on your register, on receipts (the logo) and in
-your backups, and, if you switch on online orders, as a small copy on your Sup Booking page.</p>
-<p><strong>Bluetooth.</strong> Bluetooth is used only to send receipts and labels (and, if you switch it on, a
-cash-drawer pulse) to a printer that you have already paired in your device's own Bluetooth
-settings. The app does not scan for, track, or collect information about nearby devices, and does
-not use Bluetooth for location.</p>
-<p><strong>Your business data.</strong> Your product catalog (including photos, descriptions and ingredient or
-nutrition notes), stock counts, sales and refund records, held sales, cash-up records and your
-settings (including store name, logo, GST rate and PayNow details) are stored in the app's private
-storage on your device.</p>
-<p><strong>Internet access.</strong> The app uses the internet for exactly four things: Google ML Kit's scanner
-diagnostics (described below); automatic backup to your Google Drive or OneDrive, only when you
-have switched it on and signed in; online orders and bookings through your own Sup Booking inbox,
-only when you have switched them on and connected; and printing to a Wi-Fi or network printer at
-the address you enter, which is normally on your own shop network.</p>
-<h2 id="scanner-diagnostics-sent-to-google-ml-kit">Scanner diagnostics sent to Google (ML Kit)</h2>
-<p>The barcode scanner is Google ML Kit's on-device barcode scanning. The recognition itself happens
-on your phone, but according to Google's ML Kit data disclosure
-(<a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="nofollow">https://developers.google.com/ml-kit/android-data-disclosure</a>) ML Kit sends Google, from time to
-time, for diagnostics and usage analytics:</p>
 <ul>
-<li>device information: manufacturer, model, Android version and build, and available machine-
-learning hardware;</li>
-<li>app information: the app's package name and version;</li>
-<li>a per-installation identifier, which Google says is not intended to identify a user or a
-physical device;</li>
-<li>performance figures such as how long a scan took, the image format and resolution used, the
-size of the input and output, the ML Kit version, event types and error codes.</li>
+<li><strong>The app is free, with no ads, no in-app purchases, no account of ours and no sign-in of ours.</strong> We make no money from it.</li>
+<li><strong>Your business data stays on your device unless you send it somewhere.</strong> The codes you scan, camera images, your catalog, sales, cash-ups and settings are kept in the app's private storage. We have no server and never receive any of it.</li>
+<li><strong>Where data can go, only because you set it up:</strong> your own Google Drive or OneDrive account for backups; your own Sup Booking inbox (a Google Apps Script in your Google account) for online orders; a printer you choose; and any app you share a receipt or export with.</li>
+<li><strong>One thing you cannot switch off: scanner diagnostics.</strong> Barcode scanning uses Google ML Kit, a component inside the app, which sends Google technical diagnostics about the scanner (device model, Android version, the app's version, a per-installation identifier, scan performance). It never sends camera images or what the codes say.</li>
+<li><strong>You are responsible for your business.</strong> The app is a tool: it is not a certified cash register, accounting system, tax system or payment processor, and it does not check the law for you. It is provided as it is, at your own risk (see the <a href="#terms">Terms of Use</a>).</li>
 </ul>
-<p>Google states that this data is encrypted in transit (HTTPS) and is not passed to third parties.
-It is handled under Google's Privacy Policy (<a href="https://policies.google.com/privacy" rel="nofollow">https://policies.google.com/privacy</a>). The app does
-not receive or store this data, and there is no setting in the app to turn it off.</p>
-<h2 id="automatic-backup-to-google-drive-or-onedrive-optional-off-by-default">Automatic backup to Google Drive or OneDrive (optional, off by default)</h2>
-<p>If you switch on automatic backup in Settings and sign in, the app copies this device's backup
-file (your catalog with its photos, sales, cash-ups and stock) and, if you ask for them, sales
-and catalog spreadsheets, <strong>from your phone directly to your own cloud account</strong>. The files go
-over an encrypted connection to Google or Microsoft only; they never pass through any server of
-ours, and we cannot see them.</p>
+
+<nav>
+<p><strong>Contents</strong></p>
 <ul>
-<li>
-<strong>Google Drive.</strong> You sign in with Google's own sign-in screen. The app asks only for
-permission to see and change <strong>the files it creates itself</strong> (Google's <code>drive.file</code> access): it
-makes one folder, "Sup POS", and cannot see anything else in your Drive. Google Play services
-holds the sign-in; the app keeps your account's email address on this device to show who is
-signed in.</li>
-<li>
-<strong>OneDrive.</strong> You sign in on Microsoft's own sign-in page in your browser; the app never sees
-your password. It asks only for access to <strong>its own app folder</strong> in your OneDrive (under Apps)
-and for your account's name and email address, to show who is signed in. The access tokens are
-encrypted with a key kept in your device's secure key store and stay on this device.</li>
-<li>
-<strong>Several counters.</strong> When several of your devices sign in to the same account, each writes only
-its own files there, and the Shop screen on a device downloads the others' files to add the shop
-up. Each installation carries a random six-character counter id used only to tell its own files
-apart; it identifies the installation, not a person.</li>
-<li>
-<strong>Restore</strong> downloads the backup file you pick from your account and deletes the downloaded
-copy once it has been loaded or you cancel.</li>
-<li>
-<strong>What Google or Microsoft do with the files</strong> is governed by your agreement with them and
-their privacy policies (<a href="https://policies.google.com/privacy" rel="nofollow">https://policies.google.com/privacy</a>,
-<a href="https://privacy.microsoft.com/privacystatement" rel="nofollow">https://privacy.microsoft.com/privacystatement</a>).</li>
-<li>
-<strong>Stopping.</strong> Switching automatic backup off stops all uploads. <em>Sign out</em> in Settings removes
-the account and its sign-in from this device. It does not withdraw the app's access at Google
-or Microsoft, because your other counters may still use it. To withdraw it everywhere, use your
-Google Account (Security ▸ Your connections to third-party apps &amp; services) or your Microsoft
-account (Privacy ▸ Apps and services). The backup files are yours: delete them in Drive or
-OneDrive whenever you like.</li>
-</ul>
-<h2 id="online-orders-and-bookings-optional-off-by-default">Online orders and bookings (optional, off by default)</h2>
-<p>If you switch on online orders and bookings in Settings and connect the app to your Sup Booking
-inbox, the app exchanges data with that inbox and nothing else. The inbox is a Google Apps Script
-web app and a Google Sheet that <strong>you</strong> set up in <strong>your own</strong> Google account; it runs on Google's
-servers under your account. We, the developer, do not run it, cannot see it and receive nothing
-from it. Every exchange uses an encrypted connection.</p>
+<li><a href="#privacy">Part 1: Privacy Policy</a>
 <ul>
-<li>
-<strong>What the app sends to your inbox.</strong>
-<ul>
-<li>Your menu, so your Sup Booking page can show it: your shop's name, address, contact details,
-currency and logo, your opening hours and what the page takes (pick-up, table orders,
-bookings), and for each item its name, price, options, description, ingredient or nutrition
-notes (only if that feature is on), category, how many are left today, and a small photo. It
-never sends cost prices, barcodes, stock counts beyond "N left today", your sales or any key
-other than the shop key below.</li>
-<li>What you do with each order or booking (accept, reject, mark ready, complete or cancel an
-order; confirm, decline, complete or cancel a booking), with any message to the customer you
-type.</li>
-<li>For an online order paid at the register: its receipt number and receipt text, which the
-customer then sees in their order history. If the inbox cannot be reached, these wait on this
-device and are sent once it can.</li>
+<li><a href="#roles">Who is responsible for what</a></li>
+<li><a href="#on-device">What the app does with your data on the device</a></li>
+<li><a href="#mlkit">Scanner diagnostics sent to Google (ML Kit)</a></li>
+<li><a href="#cloud-backup">Automatic backup to Google Drive or OneDrive</a></li>
+<li><a href="#online-orders">Online orders and bookings</a></li>
+<li><a href="#other-ways">Other ways your data leaves the device, only when you choose</a></li>
+<li><a href="#android-backup">Android's own backup</a></li>
+<li><a href="#retention">Retention and deletion</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#your-rights">Your rights, and your customers' rights</a></li>
+<li><a href="#children">Children</a></li>
+<li><a href="#permissions">Permissions summary</a></li>
 </ul>
 </li>
-<li>
-<strong>What the app receives from your inbox.</strong> The orders and bookings your customers placed,
-including each customer's name and the mobile number and/or email address they gave. The app
-fetches them every 20 seconds while Home, the register or the Online orders screen is open, and
-shows them on the Online orders screen. It does not store them in the app's database or in your
-backups. A paid online order becomes an ordinary sale in your sales records, like any other.</li>
-<li>
-<strong>The shop key.</strong> Connecting uses a connection code that contains a key for your inbox. The app
-keeps that key on this device only, encrypted with a key held in your device's secure key store
-and excluded from Android's backup. It is never shown again and is sent only to your inbox, with
-each request.</li>
-<li>
-<strong>Contacting customers.</strong> The Call, WhatsApp, SMS and email buttons open your phone's own apps
-with the customer's number or address (and, for a receipt, the receipt text) filled in. Nothing
-is sent until you press Send in that app, and what happens next is governed by that app's own
-privacy policy.</li>
-<li>
-<strong>Your customers' details are yours to look after.</strong> You, the shop, collect them through your
-Sup Booking page and keep them in your Google account, so you are responsible for them under the
-data protection law that applies to you (in Singapore, the PDPA). Sup Booking includes a privacy
-notice template for your page; fill it in and have it checked before you take orders. What
-Google does with data in your account is governed by your agreement with Google and its privacy
-policy (<a href="https://policies.google.com/privacy" rel="nofollow">https://policies.google.com/privacy</a>).</li>
-<li>
-<strong>Stopping.</strong> Switching the feature off stops all contact with the inbox. <em>Disconnect</em> in
-Settings removes the key from this device. Orders, bookings and the published menu stay in your
-Google Sheet until you delete them there.</li>
-</ul>
-<h2 id="when-your-business-data-leaves-your-device-in-other-ways--only-when-you-choose">When your business data leaves your device in other ways — only when you choose</h2>
+<li><a href="#terms">Part 2: Terms of Use</a>
 <ul>
-<li>
-<strong>Sharing a receipt or export.</strong> When you export a receipt as a PDF, share it as text, email
-it, or export your sales as a CSV file, Android's standard share screen opens and the file is
-handed to whichever app you pick (for example your email or messaging app). What happens to it
-afterwards is governed by that app's own privacy policy.</li>
-<li>
-<strong>Opening a scanned link.</strong> If you scan a QR code containing a web address and tap "Open in
-browser", the address is handed to your browser. The app does not fetch or inspect the page.</li>
-<li>
-<strong>Printing.</strong> Receipts and labels go directly to the printer you selected: over Bluetooth, over
-your network to the printer address you entered, or over a USB cable. If you choose <em>Android
-printing</em>, the receipt or label is handed to Android's print system and the print service you
-pick there (for example the Brother or Mopria print service), which handles it under its own
-privacy policy.</li>
-<li>
-<strong>Automatic backup to a folder on the phone (optional).</strong> Instead of a cloud account you can
-pick a folder on the phone; the app keeps this device's backup file there and uploads nothing.
-If you install a folder-sync app such as OneSync and point it at that folder, that app uploads
-the file under its own and your cloud provider's privacy policies, not ours. When <em>Excel-ready
-files alongside the backup</em> is on, the folder also receives this device's sales and catalog as
-spreadsheet files; they hold the same sales records as the backup and deserve the same care.</li>
-<li>
-<strong>Backup files and catalog exports by hand.</strong> When you back up your data or export your catalog,
-the app writes the file to the location you pick in Android's file picker. Keep backup files
-private: they contain your sales records.</li>
-<li>
-<strong>Importing.</strong> When you restore a backup or import a catalog spreadsheet, the app reads only
-the single file you pick.</li>
-<li>
-<strong>Keyboard-style barcode scanners.</strong> A USB or Bluetooth scanner you connect acts as a
-keyboard; the app reads the codes it types while the register is open and nothing else.</li>
+<li><a href="#acceptance">Acceptance and eligibility</a></li>
+<li><a href="#licence">Your licence to use the app</a></li>
+<li><a href="#what-the-app-is">What the app is, and is not</a></li>
+<li><a href="#your-business">Your business, your responsibility</a></li>
+<li><a href="#payments">Payments</a></li>
+<li><a href="#records">Records, backups and restores</a></li>
+<li><a href="#hardware">Hardware: printers, drawers, scanners</a></li>
+<li><a href="#customers">Your customers and their data</a></li>
+<li><a href="#third-party-services">Third-party services</a></li>
+<li><a href="#acceptable-use">Acceptable use</a></li>
+<li><a href="#no-warranty">No warranty</a></li>
+<li><a href="#liability">Limitation of liability</a></li>
+<li><a href="#indemnity">Your indemnity</a></li>
+<li><a href="#ending">Changes, suspension and ending</a></li>
+<li><a href="#ip">Intellectual property</a></li>
+<li><a href="#law">Governing law and disputes</a></li>
+<li><a href="#general">General</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
-<h2 id="androids-own-backup">Android's own backup</h2>
-<p>If you have Android's automatic backup enabled, your app <strong>settings (including the online-orders
-settings and your inbox's address) and shop logo</strong> may be included in your Google account backup
-under Google's own privacy policy. Your <strong>sales ledger database (which also holds your product
-photos), cloud sign-ins, the online-orders shop key, receipts still waiting to reach the inbox and
-the counter id are excluded</strong> from Android's automatic backup and from device-to-device transfer.</p>
-<h2 id="permissions-summary">Permissions summary</h2>
+</li>
+</ul>
+</nav>
+
+<div class="part">
+<h1 id="privacy">Part 1: Privacy Policy</h1>
+</div>
+
+<h2 id="roles">Who is responsible for what</h2>
+<ul>
+<li><strong>Your data and your customers' data are yours.</strong> Everything you enter, scan, sell, print, back up or receive through the app is your business's data. You (the shop, business or person using the app) are the organisation responsible for it under the data protection law that applies to you (for example the PDPA in Singapore, or the GDPR in the European Union). We, the developer, never receive, store or process it: the app has no server of ours, and we are neither a data controller nor a data processor for it.</li>
+<li><strong>Where you send it, that provider is responsible under your agreement with them:</strong> Google (Drive), Microsoft (OneDrive), Google again for a Sup Booking inbox in your Google account, the maker of any print service, and whichever app you share a receipt with.</li>
+<li><strong>The one exception</strong> is Google ML Kit's scanner diagnostics, which Google collects for its own purposes as described <a href="#mlkit">below</a>; we do not receive them either.</li>
+</ul>
+
+<h2 id="on-device">What the app does with your data on the device</h2>
+<p><strong>Camera.</strong> The camera is used only to read QR codes and barcodes. Frames are analysed on your device by a barcode-recognition model bundled inside the app. Camera images are never saved, never uploaded, and never leave your phone.</p>
+<p><strong>Pictures you pick.</strong> You can pick a picture from your photo album to read a QR code or barcode in it, to give a product a photo, or to set your shop logo. Pictures come through Android's photo picker, so the app can open only the picture you choose and needs no storage permission. A picture scanned for a code is read on your device and not kept. A product photo or logo is shrunk and stored in the app's private storage; it appears on your register, on receipts (the logo) and in your backups, and, if you switch on online orders, as a small copy on your Sup Booking page.</p>
+<p><strong>Bluetooth.</strong> Bluetooth is used only to send receipts and labels (and, if you switch it on, a cash-drawer pulse) to a printer that you have already paired in your device's own Bluetooth settings. The app does not scan for, track, or collect information about nearby devices, and does not use Bluetooth for location.</p>
+<p><strong>Your business data.</strong> Your product catalog (including photos, descriptions and ingredient or nutrition notes), stock counts, sales and refund records, held sales, cash-up records and your settings (including store name, logo, tax rate and PayNow details) are stored in the app's private storage on your device, where only the app can read them.</p>
+<p><strong>Internet access.</strong> The app uses the internet for exactly four things: Google ML Kit's scanner diagnostics (described below); automatic backup to your Google Drive or OneDrive, only when you have switched it on and signed in; online orders and bookings through your own Sup Booking inbox, only when you have switched them on and connected; and printing to a Wi-Fi or network printer at the address you enter, which is normally on your own shop network. It contacts no server of ours, no analytics service and no advertising service.</p>
+
+<h2 id="mlkit">Scanner diagnostics sent to Google (ML Kit)</h2>
+<p>The barcode scanner is Google ML Kit's on-device barcode scanning. The recognition itself happens on your phone, but according to Google's ML Kit data disclosure (<a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="nofollow">developers.google.com/ml-kit/android-data-disclosure</a>) ML Kit sends Google, from time to time, for diagnostics and usage analytics:</p>
+<ul>
+<li>device information: manufacturer, model, Android version and build, and available machine-learning hardware;</li>
+<li>app information: the app's package name and version;</li>
+<li>a per-installation identifier, which Google says is not intended to identify a user or a physical device;</li>
+<li>performance figures such as how long a scan took, the image format and resolution used, the size of the input and output, the ML Kit version, event types and error codes.</li>
+</ul>
+<p>Google states that this data is encrypted in transit (HTTPS) and is not passed to third parties, and handles it under Google's Privacy Policy (<a href="https://policies.google.com/privacy" rel="nofollow">policies.google.com/privacy</a>). The app does not receive or store this data, we have no access to it, and there is no setting in the app to turn it off. If that is not acceptable to you, do not use the app.</p>
+
+<h2 id="cloud-backup">Automatic backup to Google Drive or OneDrive (optional, off by default)</h2>
+<p>If you switch on automatic backup in Settings and sign in, the app copies this device's backup file (your catalog with its photos, sales, cash-ups and stock) and, if you ask for them, sales and catalog spreadsheets, <strong>from your phone directly to your own cloud account</strong>. The files go over an encrypted connection to Google or Microsoft only; they never pass through any server of ours, and we cannot see them.</p>
+<ul>
+<li><strong>Google Drive.</strong> You sign in with Google's own sign-in screen. The app asks only for permission to see and change <strong>the files it creates itself</strong> (Google's <code>drive.file</code> access): it makes one folder, "Sup POS", and cannot see anything else in your Drive. Google Play services holds the sign-in; the app keeps your account's email address on this device to show who is signed in.</li>
+<li><strong>OneDrive.</strong> You sign in on Microsoft's own sign-in page in your browser; the app never sees your password. It asks only for access to <strong>its own app folder</strong> in your OneDrive (under Apps) and for your account's name and email address, to show who is signed in. The access tokens are encrypted with a key kept in your device's secure key store and stay on this device.</li>
+<li><strong>Several counters.</strong> When several of your devices sign in to the same account, each writes only its own files there, and the Shop screen on a device downloads the others' files to add the shop up. Each installation carries a random six-character counter id used only to tell its own files apart; it identifies the installation, not a person.</li>
+<li><strong>Restore</strong> downloads the backup file you pick from your account and deletes the downloaded copy once it has been loaded or you cancel.</li>
+<li><strong>What Google or Microsoft do with the files</strong> is governed by your agreement with them and their privacy policies (<a href="https://policies.google.com/privacy" rel="nofollow">policies.google.com/privacy</a>, <a href="https://privacy.microsoft.com/privacystatement" rel="nofollow">privacy.microsoft.com/privacystatement</a>), including where in the world they store them.</li>
+<li><strong>Stopping.</strong> Switching automatic backup off stops all uploads. <em>Sign out</em> in Settings removes the account and its sign-in from this device. It does not withdraw the app's access at Google or Microsoft, because your other counters may still use it. To withdraw it everywhere, use your Google Account (Security ▸ Your connections to third-party apps &amp; services) or your Microsoft account (Privacy ▸ Apps and services). The backup files are yours: delete them in Drive or OneDrive whenever you like.</li>
+</ul>
+
+<h2 id="online-orders">Online orders and bookings (optional, off by default)</h2>
+<p>If you switch on online orders and bookings in Settings and connect the app to your Sup Booking inbox, the app exchanges data with that inbox and nothing else. The inbox is a Google Apps Script web app and a Google Sheet that <strong>you</strong> set up in <strong>your own</strong> Google account; it runs on Google's servers under your account. We, the developer, do not run it, cannot see it and receive nothing from it. Every exchange uses an encrypted connection.</p>
+<ul>
+<li><strong>What the app sends to your inbox.</strong>
+<ul>
+<li>Your menu, so your Sup Booking page can show it: your shop's name, address, contact details, currency and logo, your opening hours and what the page takes (pick-up, table orders, bookings), and for each item its name, price, options, description, ingredient or nutrition notes (only if that feature is on), category, how many are left today, and a small photo. It never sends cost prices, barcodes, stock counts beyond "N left today", your sales or any key other than the shop key below.</li>
+<li>What you do with each order or booking (accept, reject, mark ready, complete or cancel an order; confirm, decline, complete or cancel a booking), with any message to the customer you type.</li>
+<li>For an online order paid at the register: its receipt number and receipt text, which the customer then sees in their order history. If the inbox cannot be reached, these wait on this device and are sent once it can.</li>
+</ul>
+</li>
+<li><strong>What the app receives from your inbox.</strong> The orders and bookings your customers placed, including each customer's name and the mobile number and/or email address they gave. The app fetches them every 20 seconds while Home, the register or the Online orders screen is open, and shows them on the Online orders screen. It does not store them in the app's database or in your backups. A paid online order becomes an ordinary sale in your sales records, like any other.</li>
+<li><strong>The shop key.</strong> Connecting uses a connection code that contains a key for your inbox. The app keeps that key on this device only, encrypted with a key held in your device's secure key store and excluded from Android's backup. It is never shown again and is sent only to your inbox, with each request.</li>
+<li><strong>Contacting customers.</strong> The Call, WhatsApp, SMS and email buttons open your phone's own apps with the customer's number or address (and, for a receipt, the receipt text) filled in. Nothing is sent until you press Send in that app, and what happens next is governed by that app's own privacy policy.</li>
+<li><strong>Your customers' details are yours to look after.</strong> You, the shop, collect them through your Sup Booking page and keep them in your Google account, so you are responsible for them under the data protection law that applies to you. Sup Booking includes a privacy notice template for your page; fill it in and have it checked before you take orders. What Google does with data in your account is governed by your agreement with Google and its privacy policy.</li>
+<li><strong>Stopping.</strong> Switching the feature off stops all contact with the inbox. <em>Disconnect</em> in Settings removes the key from this device. Orders, bookings and the published menu stay in your Google Sheet until you delete them there.</li>
+</ul>
+
+<h2 id="other-ways">Other ways your data leaves the device, only when you choose</h2>
+<ul>
+<li><strong>Sharing a receipt or export.</strong> When you export a receipt as a PDF, share it as text, email it, or export your sales as a CSV file, Android's standard share screen opens and the file is handed to whichever app you pick (for example your email or messaging app). What happens to it afterwards is governed by that app's own privacy policy.</li>
+<li><strong>Opening a scanned link.</strong> If you scan a QR code containing a web address and tap "Open in browser", the address is handed to your browser. The app does not fetch or inspect the page.</li>
+<li><strong>Printing.</strong> Receipts and labels go directly to the printer you selected: over Bluetooth, over your network to the printer address you entered, or over a USB cable. If you choose <em>Android printing</em>, the receipt or label is handed to Android's print system and the print service you pick there (for example the Brother or Mopria print service), which handles it under its own privacy policy.</li>
+<li><strong>Automatic backup to a folder on the phone (optional).</strong> Instead of a cloud account you can pick a folder on the phone; the app keeps this device's backup file there and uploads nothing. If you install a folder-sync app such as OneSync and point it at that folder, that app uploads the file under its own and your cloud provider's privacy policies, not ours. When <em>Excel-ready files alongside the backup</em> is on, the folder also receives this device's sales and catalog as spreadsheet files; they hold the same sales records as the backup and deserve the same care.</li>
+<li><strong>Backup files and catalog exports by hand.</strong> When you back up your data or export your catalog, the app writes the file to the location you pick in Android's file picker. Keep backup files private: they contain your sales records.</li>
+<li><strong>Importing.</strong> When you restore a backup or import a catalog spreadsheet, the app reads only the single file you pick.</li>
+<li><strong>Keyboard-style barcode scanners.</strong> A USB or Bluetooth scanner you connect acts as a keyboard; the app reads the codes it types while the register is open and nothing else.</li>
+</ul>
+
+<h2 id="android-backup">Android's own backup</h2>
+<p>If you have Android's automatic backup enabled, your app <strong>settings (including the online-orders settings and your inbox's address) and shop logo</strong> may be included in your Google account backup under Google's own privacy policy. Your <strong>sales ledger database (which also holds your product photos), cloud sign-ins, the online-orders shop key, receipts still waiting to reach the inbox and the counter id are excluded</strong> from Android's automatic backup and from device-to-device transfer.</p>
+
+<h2 id="retention">Retention and deletion</h2>
+<ul>
+<li>Data on the device stays until you delete it in the app, clear the app's storage in Android's settings, or uninstall the app, which removes all of it.</li>
+<li>Backups and spreadsheets in your Google Drive, OneDrive or a folder, and orders, bookings and the menu in your Sup Booking sheet, stay until you delete them there. They are under your control, not ours.</li>
+<li>We hold nothing about you, so there is nothing for us to keep or delete. The ML Kit diagnostics are held by Google for as long as Google's policies say.</li>
+</ul>
+
+<h2 id="security">Security</h2>
+<p>Business data is kept in the app's private storage, which other apps cannot read on an unmodified device. Cloud sign-ins and the shop key are encrypted with keys in the device's secure key store and excluded from backups. Every connection to Google, Microsoft, your inbox or a network printer that supports it is encrypted in transit. The app has no lock of its own: anyone who can unlock your device can use the register, see your sales and change your settings, so protect the device with a screen lock and give it only to people you trust. No system is perfectly secure, and the app is offered without a guarantee of security.</p>
+
+<h2 id="your-rights">Your rights, and your customers' rights</h2>
+<ul>
+<li><strong>Your rights towards us.</strong> We hold no personal data about you or your customers, so there is nothing for us to give access to, correct or erase. If you believe otherwise, write to us (see <a href="#contact">Contact</a>) and we will answer within the time the law allows.</li>
+<li><strong>Your customers' rights towards you.</strong> Your customers may ask you for access to, correction of, or deletion of the details they gave you through your Sup Booking page or at your counter, and you are responsible for answering them under the law that applies to you. The app lets you cancel, complete and delete orders and bookings in your inbox; you can also edit or delete anything in your Google Sheet directly.</li>
+<li><strong>Google and Microsoft.</strong> Rights over the data in your Google or Microsoft account are exercised with them.</li>
+</ul>
+
+<h2 id="children">Children</h2>
+<p>The app is a business tool for adults and businesses. It is not directed at children, and we do not knowingly collect data from anyone, child or adult.</p>
+
+<h2 id="permissions">Permissions summary</h2>
 <table>
 <thead>
 <tr>
@@ -252,31 +216,107 @@ the counter id are excluded</strong> from Android's automatic backup and from de
 </tr>
 </tbody>
 </table>
-<p>USB printers are reached through Android's own USB permission prompt, shown when you first print to
-one. The app requests no location, contacts, storage, microphone or account permissions.</p>
-<h2 id="terms-of-use-and-your-responsibilities">Terms of use and your responsibilities</h2>
-<p><strong>Provided as is.</strong> Sup POS is provided as is, without warranty of any kind, and you use it at
-your own risk. The developer is not liable for any loss, damage or claim arising from the use or
-misuse of the app, whether direct or indirect: lost or incorrect sales records, totals or tax
-figures, printing or payment errors, data loss, or decisions made from its reports.</p>
-<p><strong>Your local law.</strong> You, the shop, must comply with the laws of your own country and locality
-when you use the app, including the tax, consumer, payment and data protection rules that apply
-to your business and to the customer details you collect (for example the PDPA in Singapore, or
-the GDPR in the EU). The app does not check this for you, and nothing in it is legal, tax or
-accounting advice. Where a feature exchanges data with a service you set up (your Google Drive or
-OneDrive, your Sup Booking inbox), the terms you accepted with that provider apply as well.</p>
-<p><strong>Your due diligence and safety.</strong> Check receipts and totals, keep backups, protect your device
-and accounts, and use the app safely and lawfully. Abuse or misuse of the app, and any harm that
-follows from it, is the responsibility of whoever does it, not of the developer.</p>
-<p>By installing or using Sup POS you accept these terms. The same terms are shown in the app under
-Settings ▸ About.</p>
-<h2 id="children">Children</h2>
-<p>The app is a business tool and is not directed at children.</p>
-<h2 id="changes">Changes</h2>
-<p>If this policy changes, the "Last updated" date above will change. Material changes will be
-noted in the app's Play Store release notes.</p>
+<p>USB printers are reached through Android's own USB permission prompt, shown when you first print to one. The app requests no location, contacts, storage, microphone or account permissions.</p>
+
+<div class="part">
+<h1 id="terms">Part 2: Terms of Use</h1>
+<p>These terms are a legal agreement between you and Sup Digital about the app. If you use the app for a business, you accept them for that business too, and "you" means both. Some of these terms limit our liability and place the risks of running your business with the app on you; they matter.</p>
+</div>
+
+<h2 id="acceptance">Acceptance and eligibility</h2>
+<ul>
+<li>By installing, opening or using the app you accept these terms and the Privacy Policy above. If you do not accept them, do not install or use the app, and uninstall it.</li>
+<li>You must be an adult (at least 18, or the age of majority where you are) and legally able to enter into this agreement. If you accept for a business, you confirm you are authorised to bind it.</li>
+<li>If the law where you are does not allow the use of an app of this kind, or of any feature of it, you must not use it.</li>
+</ul>
+
+<h2 id="licence">Your licence to use the app</h2>
+<p>We grant you a non-exclusive, non-transferable, revocable licence to install and use the app on Android devices you own or control, for your own business or personal use, in accordance with these terms and Google Play's terms. You may not copy, modify, distribute, sell, rent, lend, sublicense, reverse engineer or decompile the app or any part of it except as the law expressly allows, nor remove any notice in it, nor use it to build a competing product. The app is licensed, not sold; we keep every right not expressly granted.</p>
+<p>The app is <strong>free of charge</strong>, with no advertising, no in-app purchases and no subscription. Nothing is paid, so nothing is refunded. We earn nothing from your use of it, and we owe you no support, maintenance, update or continued availability.</p>
+
+<h2 id="what-the-app-is">What the app is, and is not</h2>
+<ul>
+<li><strong>A general-purpose tool</strong> for scanning codes, keeping a product catalog, ringing up sales, printing receipts and labels, keeping stock and cash-up records, backing those up, and taking online orders through a page you host.</li>
+<li><strong>Not a certified device or system.</strong> The app is not a certified, approved, registered or fiscal cash register, electronic cash register, fiscal printer, invoicing system, accounting system, tax system or e-invoicing system in any country. Many countries require certified equipment, registered software, electronic invoicing, fiscal receipts or specific receipt contents for businesses; whether that applies to you, and how you meet it, is your responsibility. We make no statement that the app meets any such requirement.</li>
+<li><strong>Not a payment service.</strong> The app does not process, collect, hold, transfer or guarantee any payment. It can print or show payment details you configure (for example a PayNow QR code with your own identifier) so that a customer can pay you through their own bank or wallet; whether a payment arrived is for you to check. The app never handles card numbers, card data or bank credentials.</li>
+<li><strong>Not advice.</strong> Nothing in the app, its reports, its totals, its tax figures or this page is legal, tax, accounting, financial or professional advice.</li>
+<li><strong>Not affiliated.</strong> We are not affiliated with, endorsed by or responsible for Google, Microsoft, any printer maker, any print service, any folder-sync app, any bank or payment scheme, or any of your customers or suppliers.</li>
+</ul>
+
+<h2 id="your-business">Your business, your responsibility</h2>
+<p>You alone run your business and are responsible for complying with every law and rule that applies to it where you are, whether or not the app helps you with it, including:</p>
+<ul>
+<li><strong>Tax:</strong> registration, the rate and the amount of GST, VAT, sales tax or any other tax, whether and how it is shown on receipts, record-keeping, filing and payment. The tax rate in the app is a number you enter; the app does not know your tax position.</li>
+<li><strong>Receipts and invoices:</strong> whether a receipt or invoice is required, what it must contain, in what language and format, and for how long it must be kept.</li>
+<li><strong>Consumer and trade law:</strong> pricing, labelling, refunds and returns, weights and measures, product safety, ingredient and allergen information, licensing of your trade.</li>
+<li><strong>Payments:</strong> the terms of PayNow or any other scheme, bank or wallet you accept, and verifying that you were paid.</li>
+<li><strong>Employment and premises:</strong> who you let use the app, and the devices and networks you run it on.</li>
+<li><strong>Data protection:</strong> see <a href="#customers">Your customers and their data</a>.</li>
+</ul>
+<p>The app does not check any of this for you, and we have no duty to tell you about a law or a change in it.</p>
+
+<h2 id="payments">Payments</h2>
+<p>Any payment between you and a customer is between you and that customer, through the bank, scheme or wallet you both use, under their terms. We are not a party to it, do not process it, and are not responsible for a payment that is late, missing, reversed, fraudulent, made to the wrong account (for example because the PayNow details you entered were wrong) or for any fee, dispute or chargeback. Check your account before handing over goods.</p>
+
+<h2 id="records">Records, backups and restores</h2>
+<ul>
+<li>The app's sales, stock, cash-up and other records are kept on your device. A device can be lost, stolen, broken, wiped or replaced, and an app can fail. <strong>Keeping backups is your responsibility.</strong> Switch on automatic backup, or back up by hand, and check from time to time that a backup can be restored.</li>
+<li>Totals, change, stock counts, tax figures and reports are computed from what was entered; an entry error, a missed sale, a scan of the wrong code or a wrong setting makes them wrong. <strong>Check receipts, totals and reports yourself</strong> before relying on them, especially for tax, accounting or a dispute with a customer.</li>
+<li>Restoring a backup replaces what is on the device; restoring an old backup, or restoring onto a second device, can lose records or duplicate receipt numbers. The app warns where it can; the decision is yours.</li>
+<li>A backup file contains your business records; keep it private, and keep your Google or Microsoft account secure.</li>
+</ul>
+
+<h2 id="hardware">Hardware: printers, drawers, scanners</h2>
+<p>Printers, cash drawers, barcode scanners, USB adapters and the networks they sit on are yours, from their makers, and work or fail under their own terms. We do not guarantee that any device works with the app, that a receipt prints correctly or at all, or that a cash drawer opens or stays closed. A cash-drawer pulse opens the drawer to anyone who triggers it; secure the drawer and the device. Connect only devices you trust to your device and network.</p>
+
+<h2 id="customers">Your customers and their data</h2>
+<p>When you take a customer's name, number, email, order, booking, receipt request or anything else about them, through your Sup Booking page, at your counter, or by sharing a receipt, <strong>you</strong> collect it and <strong>you</strong> are the organisation responsible for it under the data protection law that applies to you (for example the PDPA in Singapore, the GDPR in the European Union, or your state's law in the United States). You must have the right to collect it, tell your customers what you do with it, use it only for your business with them, keep it safe, keep it no longer than needed, answer their requests about it, and notify them and the authorities of a breach as the law requires. The app sends their details nowhere but your own inbox and the apps you choose to share with, but what you do with them is yours to answer for. We are not your data processor and accept no responsibility for your customers' data.</p>
+
+<h2 id="third-party-services">Third-party services</h2>
+<p>Google Drive, OneDrive, Google Apps Script and Sheets (your Sup Booking inbox), Google ML Kit, Android's print system and print services, folder-sync apps, your browser, your messaging and email apps, and the maker of any device you connect are third parties. Their services are governed by their own terms and privacy policies, may change, fail, be withdrawn or be charged for at any time, and are not under our control. We are not responsible for them, for anything you agree to with them, for data you place with them, or for their loss of it. Your use of a Google or Microsoft account with the app is subject to their terms; if they withdraw the app's access, the feature stops.</p>
+
+<h2 id="acceptable-use">Acceptable use</h2>
+<p>You must use the app lawfully, honestly and safely. You must not use it to defraud anyone, to evade tax, to falsify records, receipts or prices, to sell anything you may not lawfully sell, to collect or use anyone's data unlawfully, to send unsolicited messages, or in any way that harms others or breaks the law. Abuse or misuse of the app, and any harm that follows from it, is the responsibility of whoever does it.</p>
+
+<h2 id="no-warranty">No warranty</h2>
+<p>The app and everything in or reached through it are provided <strong>"as is" and "as available", without warranty of any kind</strong>, express or implied, to the fullest extent permitted by law. We disclaim every warranty and condition, including of merchantability, satisfactory quality, fitness for a particular purpose (including any business, tax, accounting or legal purpose), accuracy, reliability, availability, security, non-infringement, and that the app will be uninterrupted, error-free, free of harmful code, compatible with any device, printer or service, or that defects will be corrected. We do not warrant any total, tax figure, report, stock count, receipt, backup, restore, print, scan or payment detail. Any advice or information you get from us or through the app creates no warranty.</p>
+
+<h2 id="liability">Limitation of liability</h2>
+<p>To the fullest extent permitted by the law that applies to you:</p>
+<ul>
+<li>Sup Digital, and the people who make, run or contribute to the app (together "we" for this section), are <strong>not liable</strong> for any loss or damage of any kind, direct or indirect, arising out of or connected with the app, its use or misuse by you or anyone else, your inability to use it, any reliance on it, any error in it, or anything done or not done with it: including lost, wrong, duplicated or inconsistent sales, stock, cash-up, tax or accounting records, totals or receipts; lost or corrupted data or backups; a failed or wrong restore; a printing, scanning, payment or cash-drawer error; money paid to the wrong account, not paid, or stolen; tax, penalties, fines, interest or assessments; claims by customers, employees, suppliers, authorities or anyone else; loss of profit, revenue, business, goodwill or opportunity; downtime; and any indirect, incidental, special, consequential, exemplary or punitive loss, however caused and under any theory of liability (contract, tort including negligence, breach of statutory duty or otherwise), even if we were told it was possible.</li>
+<li>If, despite the above, we are found liable to you for anything, our <strong>total liability</strong> to you for all claims together is limited to the greater of the amount you paid us for the app (which is nothing) and <strong>fifty Singapore dollars (SGD 50)</strong>.</li>
+<li>Nothing in these terms excludes or limits any liability that cannot be excluded or limited by the law that applies to you, including liability for death or personal injury caused by our negligence, for fraud, or any statutory right you have that cannot be waived. In that case our liability is limited to the fullest extent the law allows.</li>
+<li>You agree that the app being free of charge, with no profit to us, is a fair basis for these limits, and that you have the means to keep your own records and backups.</li>
+</ul>
+
+<h2 id="indemnity">Your indemnity</h2>
+<p>You agree to <strong>indemnify, defend and hold harmless</strong> Sup Digital and the people who make, run or contribute to the app from and against every claim, demand, action, liability, loss, damage, fine, penalty, assessment, cost and expense (including reasonable legal fees) brought by anyone, including a customer, employee, supplier, bank, platform or public authority, that arises out of or relates to: your business; your use or misuse of the app; any sale, receipt, record, report, payment or tax matter handled with it; your customers' data; any device, network or service you connect it to; your breach of these terms; your breach of any law, regulation or rule; or your infringement of anyone's rights. We may take over the defence of any such claim at your cost, and you will cooperate with us.</p>
+
+<h2 id="ending">Changes, suspension and ending</h2>
+<p>We may change, limit, suspend or discontinue the app or any feature at any time, with or without notice, and may change these terms; the "Last updated" date at the top changes with them and material changes are noted in the app's Play Store release notes. Using the app after a change means you accept it. We are not liable to you for any change or discontinuation. Your licence ends if you breach these terms; you may end it at any time by uninstalling the app. Your data stays on your device and in your accounts regardless; export or back it up before you stop. The sections on your business, payments, records, your customers, no warranty, limitation of liability, your indemnity, intellectual property, governing law and general survive any ending.</p>
+
+<h2 id="ip">Intellectual property</h2>
+<p>The app, its code, design, icons, text and everything else in it that is not your data or a third party's is ours and is protected by copyright and other laws. "Sup POS", "Sup Booking" and "Sup Digital" are our names. Google, Android, Google Play, Google Drive, ML Kit, Microsoft, OneDrive, PayNow, Brother, Mopria, OneSync and other names belong to their owners and are used only to describe them. Your catalog, records, logo and data are yours.</p>
+
+<h2 id="law">Governing law and disputes</h2>
+<p>These terms, the Privacy Policy and any dispute or claim arising out of or in connection with them or the app (including non-contractual disputes) are governed by the laws of the <strong>Republic of Singapore</strong>, without regard to its conflict-of-law rules. You and we agree that the courts of Singapore have exclusive jurisdiction over any such dispute, and you waive any objection to that venue. If you live in a country whose law gives you a right to bring a claim in your own courts that cannot be waived, nothing here takes it away. Before starting any proceedings, please write to us; most matters can be settled by email.</p>
+
+<h2 id="general">General</h2>
+<ul>
+<li><strong>Entire agreement.</strong> This page is the whole agreement between you and us about the app and replaces anything earlier, including the summary shown in the app and in the store listing.</li>
+<li><strong>Severability.</strong> If any part of it is held invalid or unenforceable, that part is applied as far as the law allows and the rest stays in force.</li>
+<li><strong>No waiver.</strong> Our not enforcing something is not a waiver of it.</li>
+<li><strong>Assignment.</strong> You may not transfer your rights under this agreement; we may transfer ours to anyone who takes over the app.</li>
+<li><strong>No third-party rights.</strong> Except for the people indemnified above, nobody else may enforce these terms.</li>
+<li><strong>Google Play.</strong> Your use of the app is also subject to Google Play's terms. Google is not a party to this agreement and has no responsibility for the app.</li>
+<li><strong>Language.</strong> This page is written in English; a translation, if any, is for convenience and the English text governs.</li>
+<li><strong>Nothing illegal.</strong> Nothing in the app or these terms permits or encourages anything that is unlawful where you are.</li>
+</ul>
+
 <h2 id="contact">Contact</h2>
-<p>Questions about this policy: <a href="mailto:1002895i@gmail.com">1002895i@gmail.com</a></p>
+<p>Sup Digital, Singapore. Questions about this page or the app: <a href="mailto:1002895i@gmail.com">1002895i@gmail.com</a>.</p>
+<p><a href="#top">Back to top</a></p>
 </main>
 </body>
 </html>
